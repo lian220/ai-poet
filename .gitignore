@@ -1,0 +1,44 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environment
+**/.env
+venv/
+.env/
+.env.local
+*.venv
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# macOS system files
+.DS_Store
+
+# VSCode settings
+.vscode/
+
+# Streamlit cache
+.streamlit/
+.db/
+
+# Logs and debugging
+logs/
+*.log
+
+# Python package management
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Distribution / packaging
+dist/
+build/
+*.egg-info/
+MANIFEST
+
+# Docker-related
+docker-compose.override.yml
+
+# Streamlit deployment settings
+secrets.toml
