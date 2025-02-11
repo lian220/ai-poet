@@ -16,6 +16,9 @@ LLaMA 모델을 아래 Hugging Face 링크에서 다운로드하세요:
    streamlit run main.py
    ```
 
+pip install langchain
+pip install langchain_openai
+pip install langchain_community
 pip install pypdf
 pip install pdfplumber
 pip install chromadb

@@ -13,13 +13,13 @@ load_dotenv()
  
 
 from langchain_openai import ChatOpenAI
-from langchain.llms import CTransformers
+# from langchain.llms import CTransformers
 import streamlit as st
-# llm = ChatOpenAI()
-llm = CTransformers(
-    model = "llama-2-7b-chat.ggmlv3.q3_K_L.bin",
-    model_type="llama"
-)
+llm = ChatOpenAI()
+# llm = CTransformers(
+#     model = "llama-2-7b-chat.ggmlv3.q3_K_L.bin",
+#     model_type="llama"
+# )
 
 st.title('인공지능 시인')
 content = st.text_input("시의 주제를 제시해 주세요.")
