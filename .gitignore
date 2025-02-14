@@ -42,3 +42,5 @@ docker-compose.override.yml
 
 # Streamlit deployment settings
 secrets.toml
+**/chroma_db
+**/llama-2-7b-chat.ggmlv3.q3_K_L.bin
