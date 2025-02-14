@@ -23,3 +23,6 @@ pip install pypdf
 pip install pdfplumber
 pip install chromadb
 pip install tiktoken
+pip install streamlit-extras
+
+
