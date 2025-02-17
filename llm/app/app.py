@@ -12,6 +12,7 @@ client = OpenAI(api_key=API_KEY)
 #   file=open("unsu.pdf", "rb"),
 #   purpose="assistants"
 # )
+# print(file)
 
 #file_ids file-XxL3eqQKHgXq3pMttYEu43
 
@@ -20,9 +21,8 @@ my_assistant = client.beta.assistants.create(
     name="현진건 작가님2",
     model="gpt-4o",
     # 사용하고자 하는 툴 설정
-    tools=[
-        {"type": "file_search", "knowledge_files": ["file-XxL3eqQKHgXq3pMttYEu43"]}
-    ]
+    tools=[{"type": "file_search"}],
+    tool_resources={"file_search": {"vector_store_ids": ["file-Kq1uGw8okfNAbT5h34ygZB"]}},
 )
 
 file = client.files.retrieve("file-XxL3eqQKHgXq3pMttYEu43")
